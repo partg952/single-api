@@ -75,13 +75,13 @@ app.get("/api/homepage/:page",(req,res)=>{
 })
 
 app.get("/api/consoles",(req,res)=>{
-  request("https://gamulator.com/roms").on("data",data=>{
+  request("https://www.gamulator.com/roms").on("data",data=>{
     const $ = Cheerio.load(data);
     const dataarr = [];
     $("div.thumbnail-home").each(function(i){
       dataarr.push({
         image:$("div.thumbnail-home > a > img").eq(i).attr("src"),
-        name:$("div.thumbnail-home > h3").eq(i).text()
+        name:$("div.thumbnail-home > div > a > h3.centarce").eq(i).text()
       })
     })
     res.send(dataarr);
