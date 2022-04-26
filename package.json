@@ -1,0 +1,22 @@
+{
+  "name": "single-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.10",
+    "cors": "^2.8.5",
+    "express": "^4.17.3",
+    "request": "^2.88.2",
+    "requests": "^0.3.0",
+    "socket.io": "^4.5.0",
+    "uuid": "^8.3.2"
+  }
+}
